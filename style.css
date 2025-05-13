@@ -1,60 +1,159 @@
-/* Үндсэн тохиргоо */
-body {
+/* Ерөнхий бүхлэл */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Толгой хэсэг */
+/* Ерөнхий загвар */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header хэсэг */
 header {
-  background-color: #274C77;
+  background-color: #4CAF50; /* Эхний кодны өнгө */
   color: white;
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Цэсний хаягуудыг нэг мөрөнд байрлуулах */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Цэсийг төвлөрүүлэх */
+}
+
+nav ul li {
+  display: inline-block; /* Цэсний элементийг нэг мөрөнд харуулах */
+  margin-right: 15px; /* Хооронд нь бага зэрэг зай оруулах */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Сүүлийн элементийн зайг авна */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px; /* Бага зэрэг дотоод зай нэмэх */
+  display: inline-block; /* Текст болон холбоосыг inline-block болгоно */
+}
+
+nav ul li a:hover {
+  background-color: #45a049; /* Hover дээр өнгө өөрчлөх */
+  border-radius: 5px;
+}
+
+/* Өргөтгөсөн загвар - Цэсний мөрний тохиргоо */
+nav {
+  display: flex;
+  justify-content: center; /* Цэсний элементүүдийг төвлөрүүлэх */
+  background-color: #4CAF50; /* Цэсний үндсэн өнгө */
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex; /* Flexbox ашиглан цэсийг нэг мөрөнд байрлуулах */
+  justify-content: center; /* Цэсийг төвлөрүүлэх */
+}
+
+nav ul li {
+  display: flex;
+  margin-right: 20px; /* Цэсний элементийн хоорондох зай */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Сүүлийн элементийн зайг авах */
+}
+
+
+/* Main хэсэг (Нүүр хуудас болон Миний тухай) */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer хэсэг */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+footer p {
   margin: 0;
 }
 
-/* Цэс */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Section загвар */
+section {
+  margin: 30px 0;
 }
 
-nav li {
-  margin: 0 15px;
+section h2 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+section ul {
+  list-style-type: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
+section ul li {
+  margin-bottom: 10px;
 }
 
-/* Гарчигуудын арын өнгө */
-main h2, section h2, section h3 {
-  background-color: #274C77;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
+section p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
-/* Хөл хэсэг */
-footer {
-  background-color: #274C77;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
+em {
+  font-style: italic;
+  color: #333;
+}
+
+/* Ажил болон Холбоо барих хуудасны дизайн (одоо байгаа байдлаар) */
+section#work, section#contact {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+section#work h2, section#contact h2 {
+  color: #333;
+  font-size: 1.7rem;
+}
+
+section#work ul, section#contact ul {
+  list-style-type: none;
+}
+
+section#work ul li, section#contact ul li {
+  margin-bottom: 10px;
 }
