@@ -1,44 +1,105 @@
-/* Ерөнхий бүтэц */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+/* Эхний бүхлэл */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Хэсгүүд */
-section {
-  margin: 20px;
+/* Ерөнхий загвар */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Гарчиг */
-h2 {
-  font-size: 2rem;
-  color: #2c3e50;
+/* Header хэсэг */
+header {
+  background-color: #4CAF50; /* Эхний кодны өнгө */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-h3 {
-  font-size: 1.5rem;
-  color: #34495e;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-/* Список */
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-ul li {
-  padding: 5px 0;
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-/* Онцлох үг */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main хэсэг */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer хэсэг */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Section загвар */
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
 em {
   font-style: italic;
-  color: #e74c3c;
+  color: #333;
 }
