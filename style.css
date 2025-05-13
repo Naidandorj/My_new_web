@@ -157,3 +157,10 @@ section#work ul, section#contact ul {
 section#work ul li, section#contact ul li {
   margin-bottom: 10px;
 }
+/* Гарчигуудын арын өнгө */
+main h2, section h2, section h3 {
+  background-color: #274C77;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  }
