@@ -1,0 +1,8 @@
+
+/* reset.css */
+/* Элементийн default margin, padding-г reset хийж өгнө */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
