@@ -10,7 +10,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
-  color: #333;
+  color: #fff;
   padding: 20px;
 }
 
@@ -82,14 +82,14 @@ nav ul li:last-child {
 
 /* Main хэсэг (Нүүр хуудас болон Миний тухай) */
 main {
-  background-color: white;
+  background-color:  #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-  color: #333;
+  color: #fff;
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -98,7 +98,7 @@ main h2 {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #333;
+  background-color: #fff;
   color: white;
   margin-top: 30px;
   font-size: 1rem;
@@ -157,10 +157,10 @@ section#work ul, section#contact ul {
 section#work ul li, section#contact ul li {
   margin-bottom: 10px;
 }
-/* Гарчигуудын арын өнгө */
+/* Гарчигуудын арын өнгө 
 main h2, section h2, section h3 {
   background-color: #274C77;
   color: white;
   padding: 10px;
   border-radius: 4px;
-  }
+  }*/
