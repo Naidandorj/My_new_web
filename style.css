@@ -1,166 +1,76 @@
-/* Ерөнхий бүхлэл */
-* {
+/* Үндсэн тохиргоо */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Ерөнхий загвар */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #fff;
-  padding: 20px;
-}
-
-/* Header хэсэг */
+/* Толгой хэсэг */
 header {
-  background-color: #4CAF50; /* Эхний кодны өнгө */
+  background-color: #3b5998; /* Facebook цэнхэр */
   color: white;
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-/* Цэсний хаягуудыг нэг мөрөнд байрлуулах */
-nav ul {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
-  text-align: center; /* Цэсийг төвлөрүүлэх */
+  font-size: 28px;
 }
 
-nav ul li {
-  display: inline-block; /* Цэсний элементийг нэг мөрөнд харуулах */
-  margin-right: 15px; /* Хооронд нь бага зэрэг зай оруулах */
+/* Цэс хэсэг */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #3b5998;
 }
 
-nav ul li:last-child {
-  margin-right: 0; /* Сүүлийн элементийн зайг авна */
+nav li {
+  margin: 0 20px;
 }
 
-nav ul li a {
+nav a {
+  display: block;
+  padding: 12px 10px;
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
-  padding: 10px 15px; /* Бага зэрэг дотоод зай нэмэх */
-  display: inline-block; /* Текст болон холбоосыг inline-block болгоно */
+  font-weight: bold;
+  font-size: 16px;
 }
 
-nav ul li a:hover {
-  background-color: #45a049; /* Hover дээр өнгө өөрчлөх */
-  border-radius: 5px;
+nav a:hover {
+  background-color: #2d4373;
+  border-radius: 4px;
 }
 
-/* Өргөтгөсөн загвар - Цэсний мөрний тохиргоо */
-nav {
-  display: flex;
-  justify-content: center; /* Цэсний элементүүдийг төвлөрүүлэх */
-  background-color: #4CAF50; /* Цэсний үндсэн өнгө */
-  padding: 15px 0;
-}
-
-nav ul {
-  display: flex; /* Flexbox ашиглан цэсийг нэг мөрөнд байрлуулах */
-  justify-content: center; /* Цэсийг төвлөрүүлэх */
-}
-
-nav ul li {
-  display: flex;
-  margin-right: 20px; /* Цэсний элементийн хоорондох зай */
-}
-
-nav ul li:last-child {
-  margin-right: 0; /* Сүүлийн элементийн зайг авах */
-}
-
-
-/* Main хэсэг (Нүүр хуудас болон Миний тухай) */
-main {
-  background-color:  #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main h2 {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-/* Footer хэсэг */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  color: white;
-  margin-top: 30px;
-  font-size: 1rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Section загвар */
-section {
-  margin: 30px 0;
-}
-
-section h2 {
-  font-size: 1.8rem;
-  color: #4CAF50;
-  margin-bottom: 15px;
-}
-
-section ul {
-  list-style-type: none;
-}
-
-section ul li {
-  margin-bottom: 10px;
-}
-
-section p {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-em {
-  font-style: italic;
-  color: #333;
-}
-
-/* Ажил болон Холбоо барих хуудасны дизайн (одоо байгаа байдлаар) */
-section#work, section#contact {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-section#work h2, section#contact h2 {
-  color: #333;
-  font-size: 1.7rem;
-}
-
-section#work ul, section#contact ul {
-  list-style-type: none;
-}
-
-section#work ul li, section#contact ul li {
-  margin-bottom: 10px;
-}
-/* Гарчигуудын арын өнгө 
+/* Үндсэн гарчигууд */
 main h2, section h2, section h3 {
-  background-color: #274C77;
+  background-color: #3b5998;
   color: white;
   padding: 10px;
   border-radius: 4px;
-  }*/
+  margin-top: 20px;
+}
+
+/* Үндсэн текст хэсэг */
+main, section {
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Хөл хэсэг */
+footer {
+  background-color: #3b5998;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
