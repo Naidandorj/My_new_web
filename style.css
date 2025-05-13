@@ -71,6 +71,9 @@ main h2, section h2, section h3 {
   border-radius: 4px;
   margin-top: 20px;
 }
+main p, section p {
+  text-align: justify;
+}
 
 /* ------------------------- */
 /*         Хөл хэсэг         */
