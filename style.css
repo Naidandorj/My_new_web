@@ -27,31 +27,59 @@ header h1 {
   margin-bottom: 10px;
 }
 
+/* Цэсний хаягуудыг нэг мөрөнд байрлуулах */
 nav ul {
   list-style-type: none;
   padding: 0;
-  text-align: center; /* Цэсний байрлал */
   margin: 0;
+  text-align: center; /* Цэсийг төвлөрүүлэх */
 }
 
 nav ul li {
   display: inline-block; /* Цэсний элементийг нэг мөрөнд харуулах */
-  margin-right: 10px;
+  margin-right: 15px; /* Хооронд нь бага зэрэг зай оруулах */
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Сүүлийн элементэд зүүн талыг нэмж өгөхгүй */
+  margin-right: 0; /* Сүүлийн элементийн зайг авна */
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+  padding: 10px 15px; /* Бага зэрэг дотоод зай нэмэх */
+  display: inline-block; /* Текст болон холбоосыг inline-block болгоно */
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #45a049; /* Hover дээр өнгө өөрчлөх */
+  border-radius: 5px;
 }
+
+/* Өргөтгөсөн загвар - Цэсний мөрний тохиргоо */
+nav {
+  display: flex;
+  justify-content: center; /* Цэсний элементүүдийг төвлөрүүлэх */
+  background-color: #4CAF50; /* Цэсний үндсэн өнгө */
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex; /* Flexbox ашиглан цэсийг нэг мөрөнд байрлуулах */
+  justify-content: center; /* Цэсийг төвлөрүүлэх */
+}
+
+nav ul li {
+  display: flex;
+  margin-right: 20px; /* Цэсний элементийн хоорондох зай */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Сүүлийн элементийн зайг авах */
+}
+
+
 
 /* Main хэсэг (Нүүр хуудас болон Миний тухай) */
 main {
