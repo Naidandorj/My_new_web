@@ -26,7 +26,7 @@ header h1 {
 /*баннер зураг*/
 .banner-img {
   width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   object-fit: cover;
   margin-top: 10px;
   border-radius: 10px;
