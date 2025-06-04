@@ -7,6 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
   <script src="swipe-nav.js"></script>
+<!-- 🤖 Chatbot Container -->
+<div id="chat-container" style="position: fixed; bottom: 20px; right: 20px; width: 300px; font-family: sans-serif; box-shadow: 0 0 10px #ccc; border-radius: 10px; overflow: hidden; z-index: 9999;">
+  <div style="background-color: #4CAF50; color: white; padding: 10px;">🤖 Туслах чатбот</div>
+  <div id="chat-box" style="background-color: #fff; height: 200px; overflow-y: auto; padding: 10px;"></div>
+  <input type="text" id="user-input" placeholder="Асуултаа бичнэ үү..." style="width: 100%; box-sizing: border-box; padding: 10px; border: none; border-top: 1px solid #ccc;">
+</div>
+
+<script>
+  const responses = {
+    "сайн уу": "Сайн байна уу! Танд юугаар туслах вэ?",
+    "таны тухай": "Би бол Нацагдоржийн вэб хуудасны туслах чатбот.",
+    "холбоо барих": "Та надтай холбоо барихыг хүсвэл: example@email.com",
+    "баяртай": "Баяртай! Дараа дахин уулзацгаая.",
+    "cv": "Миний CV-г эндээс үзнэ үү: /docs/CV.pdf",
+    "ажлын туршлага": "Би программ хангамжийн чиглэлээр 3 жил ажилласан.",
+  };
+
+  const chatBox = document.getElementById('chat-box');
+  const userInput = document.getElementById('user-input');
+
+  userInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      const input = userInput.value.trim().toLowerCase();
+      appendMessage("Та", input);
+      const response = responses[input] || "Уучлаарай, энэ асуултад хариулт алга.";
+      appendMessage("Бот", response);
+      userInput.value = "";
+    }
+  });
+
+  function appendMessage(sender, message) {
+    const messageElement = document.createElement('div');
+    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    messageElement.style.margin = "5px 0";
+    chatBox.appendChild(messageElement);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+</script>
 
 <body>
   <header>
