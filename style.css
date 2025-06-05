@@ -2,127 +2,182 @@
 /*           Үндсэн          */
 /* ------------------------- */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
 /* ------------------------- */
 /*         Толгой хэсэг      */
 /* ------------------------- */
 header {
-  background-color: #3b5998;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  background-color: #3b5998;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 28px;
+  margin: 0;
+  font-size: 28px;
 }
-/*баннер зураг*/
+
+/* ------------------------- */
+/*        Баннер зураг        */
+/* ------------------------- */
 .banner-img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  margin-top: 10px;
-  border-radius: 10px;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 10px;
 }
+
 /* ------------------------- */
 /*        Цэс (Навигаци)     */
 /* ------------------------- */
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  background-color: #3b5998;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #3b5998;
 }
 
 nav li {
-  margin: 0 20px;
+  margin: 0 20px;
 }
 
 nav a {
-  display: block;
-  padding: 12px 10px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+  display: block;
+  padding: 12px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 nav a:hover {
-  background-color: #2d4373;
-  border-radius: 4px;
+  background-color: #2d4373;
+  border-radius: 4px;
 }
 
 /* ------------------------- */
 /*       Үндсэн контент      */
 /* ------------------------- */
 main, section {
-  padding: 20px;
-  max-width: 960px;
-  margin: 0 auto;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 main h2, section h2, section h3 {
-  background-color: #3b5998;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-  margin-top: 20px;
+  background-color: #3b5998;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
 }
+
 main p, section p {
-  text-align: justify;
+  text-align: justify;
 }
 
 /* ------------------------- */
 /*         Хөл хэсэг         */
 /* ------------------------- */
 footer {
-  background-color: #3b5998;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-  font-size: 14px;
+  background-color: #3b5998;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
 }
 
 /* ------------------------- */
 /*     Урсах хэллэг banner   */
 /* ------------------------- */
 .scrolling-banner {
-  background-color: #274C77;
-  color: white;
-  padding: 10px 0;
-  overflow: hidden;
-  white-space: nowrap;
-  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2);
-  font-weight: bold;
-  font-size: 16px;
+  background-color: #274C77;
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2);
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .scrolling-banner span.label {
-  color: #FFD700; /* Алтан шар өнгө */
-  font-weight: bold;
-  margin-right: 10px;
+  color: #FFD700;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .scrolling-banner::before {
-  content: "";
+  content: "";
 }
 
 @keyframes scrollText {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
+
+/* ------------------------- */
+/*         🤖 Чатбот         */
+/* ------------------------- */
+#chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-header {
+  background-color: #3b5998;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+  background-color: #f1f1f1;
+}
+
+#user-input {
+  border: none;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chat-message {
+  margin: 5px 0;
+  }
+
