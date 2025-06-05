@@ -21,30 +21,7 @@
     </nav>
   </header>
 
-  <div id="banner-container"></div>
-  <script src="banner.js"></script>
-  <script>
-  const input = document.querySelector('#chatbot-input input');
-  const button = document.querySelector('#chatbot-input button');
-  const messages = document.querySelector('#chatbot-messages');
-
-  button.addEventListener('click', () => {
-    const text = input.value.trim();
-    if (text !== '') {
-      const msg = document.createElement('div');
-      msg.textContent = '🧑: ' + text;
-      messages.appendChild(msg);
-      input.value = '';
-
-      // Dummy bot reply
-      const reply = document.createElement('div');
-      reply.textContent = '🤖: Баярлалаа. Удахгүй хариу илгээнэ.';
-      messages.appendChild(reply);
-
-      messages.scrollTop = messages.scrollHeight;
-    }
-  });
-  </script>
+  
   
 
   <main>
@@ -70,20 +47,31 @@
   </main>
 
   <!-- 🤖 Chatbot Container -->
-  <div id="chat-container">
-    <div class="chat-header">🤖 Туслах чатбот</div>
-    <div id="chat-box" class="chat-box"></div>
-    <input type="text" id="user-input" placeholder="Асуултаа бичнэ үү...">
-  </div>
-<div id="chatbot">
-  <div id="chatbot-header">🤖 Туслах чатбот</div>
-  <div id="chatbot-messages"></div>
-  <div id="chatbot-input">
-    <input type="text" placeholder="Асуултаа бичнэ үү..." />
-    <button>Send</button>
-  </div>
-</div>
   
+  <div id="banner-container"></div>
+  <script src="banner.js"></script>
+  <script>
+  const input = document.querySelector('#chatbot-input input');
+  const button = document.querySelector('#chatbot-input button');
+  const messages = document.querySelector('#chatbot-messages');
+
+  button.addEventListener('click', () => {
+    const text = input.value.trim();
+    if (text !== '') {
+      const msg = document.createElement('div');
+      msg.textContent = '🧑: ' + text;
+      messages.appendChild(msg);
+      input.value = '';
+
+      // Dummy bot reply
+      const reply = document.createElement('div');
+      reply.textContent = '🤖: Баярлалаа. Удахгүй хариу илгээнэ.';
+      messages.appendChild(reply);
+
+      messages.scrollTop = messages.scrollHeight;
+    }
+  });
+  </script>
   <footer>
     <p>&copy; 2025 Найдаа</p>
   </footer>
