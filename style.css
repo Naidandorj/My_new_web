@@ -1,6 +1,13 @@
 /* ------------------------- */
 /*           Үндсэн          */
 /* ------------------------- */
+@media (max-width: 480px) {
+  #chatbot {
+    width: 90%;
+    right: 5%;
+    bottom: 10px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
