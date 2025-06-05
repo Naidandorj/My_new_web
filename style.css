@@ -119,6 +119,10 @@ footer {
   margin-right: 10px;
 }
 
+.scrolling-banner::before {
+  content: "";
+}
+
 @keyframes scrollText {
   0% {
     transform: translateX(100%);
@@ -129,33 +133,33 @@ footer {
 }
 
 /* ------------------------- */
-/*         🤖 Чатбот         */
-/* ------------------------- */
+/*         🤖 Чатбот         
+
 #chat-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 300px;
   max-height: 400px;
-  background: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', sans-serif;
-  overflow: hidden;
-  z-index: 9999;
 }
 
-#chat-container .chat-header {
+.chat-header {
   background-color: #3b5998;
   color: white;
   padding: 10px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 
-#chat-box {
+.chat-box {
   flex: 1;
   padding: 10px;
   overflow-y: auto;
@@ -168,7 +172,12 @@ footer {
   border-top: 1px solid #ccc;
   padding: 10px;
   font-size: 14px;
+  outline: none;
   width: 100%;
   box-sizing: border-box;
-  outline: none;
 }
+
+.chat-message {
+  margin: 5px 0;
+  }
+/* ------------------------- */
